@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+}
+
+
+@media(max-width : 480px){
+
+    #nav-bar{
+        width: 200px;
+        float: left;
+    }
+
+    #main-doc{
+        margin-left: 216px;
+    } 
+}
+li{
+    font-size: 24px;
+}
+
+header{
+    height: 50px;
+    background-color: maroon;
+    text-align: center;
+    font-size: 36px;
+}
+p{
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    margin-top: -10px;
+    padding: 5px;
+    display: block;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: maroon;
+}
+.nav-link{
+    float: left;
+    width: 30%;
+    position: fixed;
+    
+}
+#main-doc{
+    float: right;
+    width: 69%;
+    border: 3 solid black;
+}
+#topic{
+    text-align: center;
+    background-color: white;
+    font-size: 47px;
+    
+}

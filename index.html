@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+        <header >
+                <h1 id="topic" >THE SWIFT PROGRAMMING LANGUAGE</h1>
+                
+            </header>
+
+        <nav id="nav-bar">
+
+                <div class="nav-link">
+                    <hr>
+                    <a href="#about-swift">ABOUT SWIFT</a>
+                    <hr>
+                    <a href="#features">FEATURES</a>
+                    <hr>
+                    <a href="#constants-and-variables">CONSTANTS AND VARIABLES</a>
+                    <hr>
+                    <a href="#basic-operators">BASIC OPERATORS</a>
+                    <hr>
+                    <a href="#condition-statement">CONDITION STATEMENTS</a>
+                    <hr>
+                    <a href="#functions">FUNCTIONS</a>
+                    <hr>
+                    <a href="#methods">METHODS</a>
+                    <hr>
+                    <a href="#protocols">PROTOCOLS</a>
+                    <hr>
+                    <a href="https://medium.com/@kibuukamart/meet-kj-mart-developer-to-be-ca4ab49165f1">DEVELOPER</a>
+
+                </div>
+        </nav>
+        <main id="main-doc">
+
+            <section class="main-section">
+                <header id="about-swift"> <h3>About Swift</h3> </header>
+                    <p>
+                          Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. <br />
+                          The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services. Most importantly, Swift is designed to make writing and maintaining correct programs easier for the developer. To achieve this goal, we believe that the most obvious way to write Swift code must also be:
+                    </p>
+                    <p>
+                        Safe. The most obvious way to write code should also behave in a safe manner. Undefined behavior is the enemy of safety, and developer mistakes should be caught before software is in production. Opting for safety sometimes means Swift will feel strict, but we believe that clarity saves time in the long run.
+                        <br/>
+                        <br/>
+                        <strong>Fast.</strong> Swift is intended as a replacement for C-based languages (C, C++, and Objective-C). As such, Swift must be comparable to those languages in performance for most tasks. Performance must also be predictable and consistent, not just fast in short bursts that require clean-up later. There are lots of languages with novel features — being fast is rare.
+                        <br/>
+                        <br/>
+                        <strong>Expressive.</strong> Swift benefits from decades of advancement in computer science to offer syntax that is a joy to use, with modern features developers expect. But Swift is never done. We will monitor language advancements and embrace what works, continually evolving to make Swift even better.
+                        <br/>
+                        <br/>
+                        Tools are a critical part of the Swift ecosystem. We strive to integrate well within a developer’s toolset, to build quickly, to present excellent diagnostics, and to enable interactive development experiences. Tools can make programming so much more powerful, like Swift-based playgrounds do in Xcode, or a web-based REPL can when working with Linux server-side code.
+
+                        
+                    </p>
+
+            </section>
+                        
+            <section class="main-section">
+
+                <header id="features"> <h3>Features </h3></header>
+                    <p>
+                            Swift includes features that make code easier to read and write, while giving the developer the control needed in a true systems programming language. Swift supports inferred types to make code cleaner and less prone to mistakes, and modules eliminate headers and provide namespaces. Memory is managed automatically, and you don’t even need to type semi-colons. Swift also borrows from other languages, for instance named parameters brought forward from Objective-C are expressed in a clean syntax that makes APIs in Swift easy to read and maintain.
+
+                            <br />
+                            <br />
+                            The features of Swift are designed to work together to create a language that is powerful, yet fun to use. Some additional features of Swift include:
+
+                    </p>
+                            <p>    <ol type="a"> 
+                                <li>Closures unified with function pointers</li>
+                                <li>Tuples and multiple return values</li>
+                                <li>Generics</li>
+                                <li>Fast and concise iteration over a range or collection </li>
+                                <li>Structs that support methods, extensions, and protocols </li>
+                                <li>Functional programming patterns, e.g., map and filter </li>
+                                <li>Powerful error handling built-in</li>
+                                <li>control flow with do, guard, defer, and repeat keywords</li>
+                                 </ol>
+                            </p>
+                    <p>
+                            The Basics 
+                            Swift is a new programming language for iOS, macOS, watchOS, and tvOS app development. Nonetheless, many parts of Swift will be familiar from your experience of developing in C and Objective-C.
+                            <br>
+                            <br>
+                            Swift provides its own versions of all fundamental C and Objective-C types, including Int for integers, Double and Float for floating-point values, Bool for Boolean values, and String for textual data. Swift also provides powerful versions of the three primary collection types, Array, Set, and Dictionary, as described in Collection Types.
+                            <br>
+                            <br>
+                            Like C, Swift uses variables to store and refer to values by an identifying name. Swift also makes extensive use of variables whose values can’t be changed. These are known as constants, and are much more powerful than constants in C. Constants are used throughout Swift to make code safer and clearer in intent when you work with values that don’t need to change.
+                            <br>
+                            <br>
+                            In addition to familiar types, Swift introduces advanced types not found in Objective-C, such as tuples. Tuples enable you to create and pass around groupings of values. You can use a tuple to return multiple values from a function as a single compound value.
+                            <br>
+                            <br>
+                            Swift also introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using nil with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features.
+                            <br>
+                            <br>
+                            Swift is a type-safe language, which means the language helps you to be clear about the types of values your code can work with. If part of your code requires a String, type safety prevents you from passing it an Int by mistake. Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that requires a nonoptional String. Type safety helps you catch and fix errors as early as possible in the development process.
+                            
+                            
+                    </p>
+            </section>
+                            
+            <section class="main-section">
+                <header id="constants-and-variables"><h3>Constants and Variables</h3></header>
+                    <p>
+                            Constants and variables associate a name (such as maximumNumberOfLoginAttempts or welcomeMessage) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.
+                            <br>
+                            <br>
+                            Declaring Constants and Variables
+                            Constants and variables must be declared before they’re used. You declare constants with the let keyword and variables with the var keyword. Here’s an example of how constants and variables can be used to track the number of login attempts a user has made:
+                            <br>
+                            <br>
+                            let maximumNumberOfLoginAttempts = 10
+                            var currentLoginAttempt = 0
+                            This code can be read as:
+                            <br>
+                            <br>
+                            “Declare a new constant called maximumNumberOfLoginAttempts, and give it a value of 10. Then, declare a new variable called currentLoginAttempt, and give it an initial value of 0.”
+                            <br>
+                            <br>
+                            In this example, the maximum number of allowed login attempts is declared as a constant, because the maximum value never changes. The current login attempt counter is declared as a variable, because this value must be incremented after each failed login attempt.
+                            <br>
+                            <br>
+                            You can declare multiple constants or multiple variables on a single line, separated by commas:
+                            <br>
+                            var x = 0.0, y = 0.0, z = 0.0
+                            <br>
+                            <br>
+                            Constants and Variables
+                            Constant and variable names can contain almost any character, including Unicode characters:
+                            <br>
+                            <br>
+                            let π = 3.14159
+                            let 你好 = "你好世界"
+                            let 🐶🐮 = "dogcow"
+                            Constant and variable names can’t contain whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values, or line- and box-drawing characters. Nor can they begin with a number, although numbers may be included elsewhere within the name.
+                            <br>
+                            <br>
+                            Once you’ve declared a constant or variable of a certain type, you can’t declare it again with the same name, or change it to store values of a different type. Nor can you change a constant into a variable or a variable into a constant.
+                            <br>
+                        
+                            NOTE
+                            <br>
+                            If you need to give a constant or variable the same name as a reserved Swift keyword, surround the keyword with backticks (`) when using it as a name. However, avoid using keywords as names unless you have absolutely no choice.
+                            <br>
+                            <br>
+                            You can change the value of an existing variable to another value of a compatible type. In this example, the value of friendlyWelcome is changed from "Hello!" to "Bonjour!":
+                            <br>
+                            <br>
+                            var friendlyWelcome = "Hello!"
+                            friendlyWelcome = "Bonjour!"
+                            // friendlyWelcome is now "Bonjour!"
+                            Unlike a variable, the value of a constant can’t be changed after it’s set. Attempting to do so is reported as an error when your code is compiled:
+                            <br>
+                            <br>
+                            let languageName = "Swift"
+                            languageName = "Swift++"
+                            // This is a compile-time error: languageName cannot be changed.
+                            Printing Constants and Variables
+                            You can print the current value of a constant or variable with the print(_:separator:terminator:) function:
+                            <br>
+                            <br>
+                            print(friendlyWelcome)
+                            // Prints "Bonjour!"
+                            The print(_:separator:terminator:) function is a global function that prints one or more values to an appropriate output. In Xcode, for example, the print(_:separator:terminator:) function prints its output in Xcode’s “console” pane. The separator and terminator parameter have default values, so you can omit them when you call this function. By default, the function terminates the line it prints by adding a line break. To print a value without a line break after it, pass an empty string as the terminator—for example, print(someValue, terminator: ""). For information about parameters with default values, see Default Parameter Values.
+                            <br>
+                            <br>
+                            Swift uses string interpolation to include the name of a constant or variable as a placeholder in a longer string, and to prompt Swift to replace it with the current value of that constant or variable. Wrap the name in parentheses and escape it with a backslash before the opening parenthesis:
+                            <br>
+                            <br>
+                            print("The current value of friendlyWelcome is \(friendlyWelcome)")
+                            // Prints "The current value of friendlyWelcome is Bonjour!"
+                            
+                    </p>
+            </section>
+                            
+            <section class="main-section">
+                <header id="basic-operators"> <h3> Basic-Operators </h3> </header>
+                    <p>
+                            An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (+) adds two numbers, as in let i = 1 + 2, and the logical AND operator (&&) combines two Boolean values, as in if enteredDoorCode && passedRetinaScan.
+                            <br>
+                            <br>
+                            Swift supports most standard C operators and improves several capabilities to eliminate common coding errors. The assignment operator (=) doesn’t return a value, to prevent it from being mistakenly used when the equal to operator (==) is intended. Arithmetic operators (+, -, *, /, % and so forth) detect and disallow value overflow, to avoid unexpected results when working with numbers that become larger or smaller than the allowed value range of the type that stores them. You can opt in to value overflow behavior by using Swift’s overflow operators, as described in Overflow Operators.
+                            <br>
+                            <br>
+                            Swift also provides range operators that aren’t found in C, such as a..b and a...b, as a shortcut for expressing a range of values.
+                            
+                            This chapter describes the common operators in Swift. Advanced Operators covers Swift’s advanced operators, and describes how to define your own custom operators and implement the standard operators for your own custom types.
+                            
+                             Assignment Operator 
+                            The assignment operator (a = b) initializes or updates the value of a with the value of b:
+                            
+                            let b = 10
+                            var a = 5
+                            a = b
+                            // a is now equal to 10
+                            If the right side of the assignment is a tuple with multiple values, its elements can be decomposed into multiple constants or variables at once:
+                            
+                            let (x, y) = (1, 2)
+                            // x is equal to 1, and y is equal to 2
+                            Unlike the assignment operator in C and Objective-C, the assignment operator in Swift does not itself return a value. The following statement is not valid:
+                            
+                            if x = y {
+                                // This is not valid, because x = y does not return a value.
+                            }
+                            This feature prevents the assignment operator (=) from being used by accident when the equal to operator (==) is actually intended. By making if x = y invalid, Swift helps you to avoid these kinds of errors in your code.
+                            
+                             Arithmetic Operators 
+                            Swift supports the four standard arithmetic operators for all number types:
+                            
+                            Addition (+)
+                            Subtraction (-)
+                            Multiplication (*)
+                            Division (/)
+                            <br>
+                            1 + 2       // equals 3
+                            5 - 3       // equals 2
+                            2 * 3       // equals 6
+                            10.0 / 2.5  // equals 4.0
+                            Unlike the arithmetic operators in C and Objective-C, the Swift arithmetic operators don’t allow values to overflow by default. You can opt in to value overflow behavior by using Swift’s overflow operators (such as a &+ b). See Overflow Operators.
+                            <br>
+                            The addition operator is also supported for String concatenation:
+                            <br>
+                            "hello, " + "world"  // equals "hello, world"
+                            
+                            <br>
+                            <br>
+
+                             Compound Assignment Operators 
+                            Like C, Swift provides compound assignment operators that combine assignment (=) with another operation. One example is the addition assignment operator (+=):
+                            <br>
+                            <br>
+                            var a = 1
+                            a += 2
+                            // a is now equal to 3
+                            The expression a += 2 is shorthand for a = a + 2. Effectively, the addition and the assignment are combined into one operator that performs both tasks at the same time.
+                            <br>
+                            <br>
+                            NOTE
+                            
+                            The compound assignment operators don’t return a value. For example, you can’t write let b = a += 2.
+                            
+                            For information about the operators provided by the Swift standard library, see Operator Declarations.
+                            
+                             Comparison Operators 
+                            Swift supports all standard C comparison operators:
+                            <br>
+                            Equal to (a == b)
+                            Not equal to (a != b)
+                            Greater than (a > b)
+                            Less than (a < b)
+                            Greater than or equal to (a >= b)
+                            Less than or equal to (a <= b)
+                            <br>
+                            <br>
+                            NOTE
+                            
+                            Swift also provides two identity operators (=== and !==), which you use to test whether two object references both refer to the same object instance. For more information, see Structures and Classes.
+                            
+                            Each of the comparison operators returns a Bool value to indicate whether or not the statement is true:
+                            <br>
+                            <br>
+                            
+                            1 == 1   // true because 1 is equal to 1
+                            2 != 1   // true because 2 is not equal to 1
+                            2 > 1    // true because 2 is greater than 1
+                            1 < 2    // true because 1 is less than 2
+                            1 >= 1   // true because 1 is greater than or equal to 1
+                            2 <= 1   // false because 2 is not less than or equal to 1
+                            Comparison operators are often used in conditional statements, such as the if statement:
+                            <br>
+                            <br>
+                            let name = "world"
+                            if name == "world" {
+                                print("hello, world")
+                            } else {
+                                print("I'm sorry \(name), but I don't recognize you")
+                            }
+                            // Prints "hello, world", because name is indeed equal to "world".
+                            For more about the if statement, see Control Flow.
+                            <br>
+                            <br>
+                            You can compare two tuples if they have the same type and the same number of values. Tuples are compared from left to right, one value at a time, until the comparison finds two values that aren’t equal. Those two values are compared, and the result of that comparison determines the overall result of the tuple comparison. If all the elements are equal, then the tuples themselves are equal. For example:
+                            <br>
+                            <br>
+
+                            (1, "zebra") < (2, "apple")   // true because 1 is less than 2; "zebra" and "apple" are not compared
+                            (3, "apple") < (3, "bird")    // true because 3 is equal to 3, and "apple" is less than "bird"
+                            (4, "dog") == (4, "dog")      // true because 4 is equal to 4, and "dog" is equal to "dog"
+                            In the example above, you can see the left-to-right comparison behavior on the first line. Because 1 is less than 2, (1, "zebra") is considered less than (2, "apple"), regardless of any other values in the tuples. It doesn’t matter that "zebra" isn’t less than "apple", because the comparison is already determined by the tuples’ first elements. However, when the tuples’ first elements are the same, their second elements are compared—this is what happens on the second and third line.
+                            <br>
+                            <br>
+                            Tuples can be compared with a given operator only if the operator can be applied to each value in the respective tuples. For example, as demonstrated in the code below, you can compare two tuples of type (String, Int) because both String and Int values can be compared using the < operator. In contrast, two tuples of type (String, Bool) can’t be compared with the < operator because the < operator can’t be applied to Bool values.
+                            <br>
+                            <br>
+                            ("blue", -1) < ("purple", 1)        // OK, evaluates to true
+                            ("blue", false) < ("purple", true)  // Error because < can't compare Boolean values
+
+                    </p>
+            </section>
+                        
+            <section class="main-section">
+                <header id="strings-and-characters"> <h3> Strings and Characters</h3> </header>
+                    <p>
+                            Strings and Characters
+                            A string is a series of characters, such as "hello, world" or "albatross". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values.
+                            <br>
+                            <br>
+                            Swift’s String and Character types provide a fast, Unicode-compliant way to work with text in your code. The syntax for string creation and manipulation is lightweight and readable, with a string literal syntax that is similar to C. String concatenation is as simple as combining two strings with the + operator, and string mutability is managed by choosing between a constant or a variable, just like any other value in Swift. You can also use strings to insert constants, variables, literals, and expressions into longer strings, in a process known as string interpolation. This makes it easy to create custom string values for display, storage, and printing.
+                            <br>
+                            <br>
+                            Despite this simplicity of syntax, Swift’s String type is a fast, modern string implementation. Every string is composed of encoding-independent Unicode characters, and provides support for accessing those characters in various Unicode representations.
+                            <br>
+                            <br>
+                            NOTE
+                            
+                            Swift’s String type is bridged with Foundation’s NSString class. Foundation also extends String to expose methods defined by NSString. This means, if you import Foundation, you can access those NSString methods on String without casting.
+                            
+                    </p>
+            </section>
+                            
+            <section class="main-section">
+                <header id="control-flow"> <h3> Control Flow </h3> </header>
+                    <p>
+                            Control Flow
+                            Swift provides a variety of control flow statements. These include while loops to perform a task multiple times; if, guard, and switch statements to execute different branches of code based on certain conditions; and statements such as break and continue to transfer the flow of execution to another point in your code.
+                            <br>
+                            <br>
+                            Swift also provides a for-in loop that makes it easy to iterate over arrays, dictionaries, ranges, strings, and other sequences.
+                            
+                            Swift’s switch statement is considerably more powerful than its counterpart in many C-like languages. Cases can match many different patterns, including interval matches, tuples, and casts to a specific type. Matched values in a switch case can be bound to temporary constants or variables for use within the case’s body, and complex matching conditions can be expressed with a where clause for each case.
+                            
+                            For-In Loops 
+                            You use the for-in loop to iterate over a sequence, such as items in an array, ranges of numbers, or characters in a string.
+                            <br>
+                            <br>
+                            This example uses a for-in loop to iterate over the items in an array:
+                            <br>
+                            let names = ["Anna", "Alex", "Brian", "Jack"]
+                            for name in names {
+                                print("Hello, \(name)!")
+                            }
+                            // Hello, Anna!
+                            // Hello, Alex!
+                            // Hello, Brian!
+                            // Hello, Jack!
+                            <br>
+                            <br>
+                            While Loops
+                            A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations is not known before the first iteration begins. Swift provides two kinds of while loops:
+                            <br>
+                            <br>
+                            while evaluates its condition at the start of each pass through the loop.
+                            repeat-while evaluates its condition at the end of each pass through the loop.
+                            While
+                            A while loop starts by evaluating a single condition. If the condition is true, a set of statements is repeated until the condition becomes false.
+                            <br>
+                            <br>
+                            Here’s the general form of a while loop:
+                            
+                            while condition {
+                                statements
+                            }
+
+                            <br>
+                            <br>
+                            Repeat-While
+                            The other variation of the while loop, known as the repeat-while loop, performs a single pass through the loop block first, before considering the loop’s condition. It then continues to repeat the loop until the condition is false.
+                            <br>
+                            <br>
+                            NOTE
+                            
+                            The repeat-while loop in Swift is analogous to a do-while loop in other languages.
+                            
+                            Here’s the general form of a repeat-while loop:
+                            
+                            repeat {
+                                statements
+                            } while condition
+
+                    </p>
+            </section>
+                        
+            <section class="main-section">
+                <header id="condition-statement"> <h3>Condition Statements</h3> </header>
+                    <p>
+                            Conditional Statements
+                            It is often useful to execute different pieces of code based on certain conditions. You might want to run an extra piece of code when an error occurs, or to display a message when a value becomes too high or too low. To do this, you make parts of your code conditional.
+                            <br>
+                            <br>
+                            Swift provides two ways to add conditional branches to your code: the if statement and the switch statement. Typically, you use the if statement to evaluate simple conditions with only a few possible outcomes. The switch statement is better suited to more complex conditions with multiple possible permutations and is useful in situations where pattern matching can help select an appropriate code branch to execute.
+
+                            <br>
+                            <br>
+                             If 
+                            
+                            In its simplest form, the if statement has a single if condition. It executes a set of statements only if that condition is true.
+                            <br>
+                            <br>
+                            var temperatureInFahrenheit = 30
+                            if temperatureInFahrenheit <= 32 {
+                                print("It's very cold. Consider wearing a scarf.")
+                            }
+                            // Prints "It's very cold. Consider wearing a scarf."
+                            The example above checks whether the temperature is less than or equal to 32 degrees Fahrenheit (the freezing point of water). If it is, a message is printed. Otherwise, no message is printed, and code execution continues after the if statement’s closing brace.
+                            <br>
+                            <br>
+                            The if statement can provide an alternative set of statements, known as an else clause, for situations when the if condition is false. These statements are indicated by the else keyword.
+                            <br>
+                            <br>
+                            temperatureInFahrenheit = 40
+                            if temperatureInFahrenheit <= 32 {
+                                print("It's very cold. Consider wearing a scarf.")
+                            } else {
+                                print("It's not that cold. Wear a t-shirt.")
+                            }
+                            // Prints "It's not that cold. Wear a t-shirt."
+                            One of these two branches is always executed. Because the temperature has increased to 40 degrees Fahrenheit, it is no longer cold enough to advise wearing a scarf and so the else branch is triggered instead.
+                            
+                            <br>
+                            <br>
+                             Switch 
+                            A switch statement considers a value and compares it against several possible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully. A switch statement provides an alternative to the if statement for responding to multiple potential states.
+                            <br>
+                            <br>
+                            In its simplest form, a switch statement compares a value against one or more values of the same type.
+                            
+                            switch some value to consider {
+                            case value 1:
+                                respond to value 1
+                            case value 2,
+                                 value 3:
+                                respond to value 2 or 3
+                            default:
+                                otherwise, do something else
+                            }
+                            Every switch statement consists of multiple possible cases, each of which begins with the case keyword. In addition to comparing against specific values, Swift provides several ways for each case to specify more complex matching patterns. These options are described later in this chapter.
+                            <br>
+                            <br>
+                            Like the body of an if statement, each case is a separate branch of code execution. The switch statement determines which branch should be selected. This procedure is known as switching on the value that is being considered.
+                            <br>
+                            <br>
+                            Every switch statement must be exhaustive. That is, every possible value of the type being considered must be matched by one of the switch cases. If it’s not appropriate to provide a case for every possible value, you can define a default case to cover any values that are not addressed explicitly. This default case is indicated by the default keyword, and must always appear last.
+                            <br>
+                            <br>
+                            This example uses a switch statement to consider a single lowercase character called someCharacter:
+                            
+                            let someCharacter: Character = "z"
+                            switch someCharacter {
+                            case "a":
+                                print("The first letter of the alphabet")
+                            case "z":
+                                print("The last letter of the alphabet")
+                            default:
+                                print("Some other character")
+                            }
+                            // Prints "The last letter of the alphabet"
+                            The switch statement’s first case matches the first letter of the English alphabet, a, and its second case matches the last letter, z. Because the switch must have a case for every possible character, not just every alphabetic character, this switch statement uses a default case to match all characters other than a and z. This provision ensures that the switch statement is exhaustive.
+                            
+                    </p>
+            </section>
+                            
+            <section class="main-section">
+                <header id="functions"> <h3>Functions</h3></header>
+                    <p>
+                            
+                            Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.
+                            <br>
+                            <br>
+                            Swift’s unified function syntax is flexible enough to express anything from a simple C-style function with no parameter names to a complex Objective-C-style method with names and argument labels for each parameter. Parameters can provide default values to simplify function calls and can be passed as in-out parameters, which modify a passed variable once the function has completed its execution.
+                            <br>
+                            <br>
+                            Every function in Swift has a type, consisting of the function’s parameter types and return type. You can use this type like any other type in Swift, which makes it easy to pass functions as parameters to other functions, and to return functions from functions. Functions can also be written within other functions to encapsulate useful functionality within a nested function scope.
+                            <br>
+                            <br>
+                            Defining and Calling Functions
+                            When you define a function, you can optionally define one or more named, typed values that the function takes as input, known as parameters. You can also optionally define a type of value that the function will pass back as output when it is done, known as its return type.
+                            <br>
+                            <br>
+                            Every function has a function name, which describes the task that the function performs. To use a function, you “call” that function with its name and pass it input values (known as arguments) that match the types of the function’s parameters. A function’s arguments must always be provided in the same order as the function’s parameter list.
+                            <br>
+                            <br>
+                            The function in the example below is called greet(person:), because that’s what it does—it takes a person’s name as input and returns a greeting for that person. To accomplish this, you define one input parameter—a String value called person—and a return type of String, which will contain a greeting for that person:
+                            <br>
+                            func greet(person: String) -> String {
+                                let greeting = "Hello, " + person + "!"
+                                return greeting
+                            }
+                            All of this information is rolled up into the function’s definition, which is prefixed with the func keyword. You indicate the function’s return type with the return arrow -> (a hyphen followed by a right angle bracket), which is followed by the name of the type to return.
+                            <br>
+                            <br>
+                            The definition describes what the function does, what it expects to receive, and what it returns when it is done. The definition makes it easy for the function to be called unambiguously from elsewhere in your code:
+                            <br>
+                            print(greet(person: "Anna"))
+                            // Prints "Hello, Anna!"
+                            print(greet(person: "Brian"))
+                            // Prints "Hello, Brian!"
+                            You call the greet(person:) function by passing it a String value after the person argument label, such as greet(person: "Anna"). Because the function returns a String value, greet(person:) can be wrapped in a call to the print(_:separator:terminator:) function to print that string and see its return value, as shown above.
+                            <br>
+                            <br>
+                            NOTE
+                            
+                            The print(_:separator:terminator:) function doesn’t have a label for its first argument, and its other arguments are optional because they have a default value. These variations on function syntax are discussed below in Function Argument Labels and Parameter Names and Default Parameter Values.
+                            <br>
+                            <br>
+                            The body of the greet(person:) function starts by defining a new String constant called greeting and setting it to a simple greeting message. This greeting is then passed back out of the function using the return keyword. In the line of code that says return greeting, the function finishes its execution and returns the current value of greeting.
+                            <br>
+                            <br>
+                            You can call the greet(person:) function multiple times with different input values. The example above shows what happens if it is called with an input value of "Anna", and an input value of "Brian". The function returns a tailored greeting in each case.
+                            <br>
+                            <br>
+                            To make the body of this function shorter, you can combine the message creation and the return statement into one line:
+                            <br>
+                            func greetAgain(person: String) -> String {
+                                return "Hello again, " + person + "!"
+                            }
+                            print(greetAgain(person: "Anna"))
+                            // Prints "Hello again, Anna!"
+                            Function Parameters and Return Values
+                            Function parameters and return values are extremely flexible in Swift. You can define anything from a simple utility function with a single unnamed parameter to a complex function with expressive parameter names and different parameter options.
+                            
+                            
+                    </p>
+                </section>
+
+                        
+
+            <section class="main-section">
+                <header id="structures-and-classes"><h3> Structures and Classes </h3></header>
+                    <p>
+                            Structures and Classes
+                            Structures and classes are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your structures and classes using the same syntax you use to define constants, variables, and functions.
+                            <br>
+                            <br>
+                            Unlike other programming languages, Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.
+                            <br>
+                            <br>
+                            Comparing Structures and Classes
+                            Structures and classes in Swift have many things in common. Both can:
+                            <br>
+                            Define properties to store values
+                            Define methods to provide functionality
+                            Define subscripts to provide access to their values using subscript syntax
+                            Define initializers to set up their initial state
+                            Be extended to expand their functionality beyond a default implementation
+                            Conform to protocols to provide standard functionality of a certain kind
+                            For more information, see Properties, Methods, Subscripts, Initialization, Extensions, and Protocols.
+                            <br>
+                            <br>
+                            Classes have additional capabilities that structures don’t have:
+                            
+                            Inheritance enables one class to inherit the characteristics of another.
+                            Type casting enables you to check and interpret the type of a class instance at runtime.
+                            Deinitializers enable an instance of a class to free up any resources it has assigned.
+                            Reference counting allows more than one reference to a class instance.
+                            For more information, see Inheritance, Type Casting, Deinitialization, and Automatic Reference Counting.
+                            <br>
+                            <br>
+                            The additional capabilities that classes support come at the cost of increased complexity. As a general guideline, prefer structures and enumerations because they’re easier to reason about, and use classes when they’re appropriate or necessary. In practice, this means most of the custom data types you define will be structures and enumerations. For a more detailed comparison, see Choosing Between Structures and Classes.
+                            <br>
+                            <br>
+                            Definition Syntax
+                            Structures and classes have a similar definition syntax. You introduce structures with the struct keyword and classes with the class keyword. Both place their entire definition within a pair of braces:
+                            
+                            struct SomeStructure {
+                                // structure definition goes here
+                            }
+                            class SomeClass {
+                                // class definition goes here
+                            }
+                            
+                            
+                    </p>
+                </section>
+                        
+                    
+            <section class="main-section">
+                <header id="methods"><h3>Methods</h3></header>
+                <p>
+                Methods
+                Methods are functions that are associated with a particular type. Classes, structures, and enumerations can all define instance methods, which encapsulate specific tasks and functionality for working with an instance of a given type. Classes, structures, and enumerations can also define type methods, which are associated with the type itself. Type methods are similar to class methods in Objective-C.
+                <br>
+                <br>
+                The fact that structures and enumerations can define methods in Swift is a major difference from C and Objective-C. In Objective-C, classes are the only types that can define methods. In Swift, you can choose whether to define a class, structure, or enumeration, and still have the flexibility to define methods on the type you create.
+                <br>
+                <br>
+                Instance Methods
+                Instance methods are functions that belong to instances of a particular class, structure, or enumeration. They support the functionality of those instances, either by providing ways to access and modify instance properties, or by providing functionality related to the instance’s purpose. Instance methods have exactly the same syntax as functions, as described in Functions.
+                <br>
+                <br>
+                You write an instance method within the opening and closing braces of the type it belongs to. An instance method has implicit access to all other instance methods and properties of that type. An instance method can be called only on a specific instance of the type it belongs to. It cannot be called in isolation without an existing instance.
+                <br>
+                <br>
+                Here’s an example that defines a simple Counter class, which can be used to count the number of times an action occurs:
+                
+                class Counter {
+                    var count = 0
+                    func increment() {
+                        count += 1
+                    }
+                    func increment(by amount: Int) {
+                        count += amount
+                    }
+                    func reset() {
+                        count = 0
+                    }
+                }
+                <br>
+                <br>
+                The Counter class defines three instance methods:
+                
+                increment() increments the counter by 1.
+                increment(by: Int) increments the counter by a specified integer amount.
+                reset() resets the counter to zero.
+                The Counter class also declares a variable property, count, to keep track of the current counter value.
+                <br>
+                <br>
+                You call instance methods with the same dot syntax as properties:
+                
+                let counter = Counter()
+                // the initial counter value is 0
+                counter.increment()
+                // the counter's value is now 1
+                counter.increment(by: 5)
+                // the counter's value is now 6
+                counter.reset()
+                // the counter's value is now 0
+                Function parameters can have both a name (for use within the function’s body) and an argument label (for use when calling the function), as described in Function Argument Labels and Parameter Names. The same is true for method parameters, because methods are just functions that are associated with a type.
+                
+                </p>
+            </section>
+                        
+            <section class="main-section">
+                <header id="protocols"><h3>Protocols</h3></header>
+                 <p>
+                        Protocols
+                        A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality. The protocol can then be adopted by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to conform to that protocol.
+                        <br>
+                        <br>
+                        In addition to specifying requirements that conforming types must implement, you can extend a protocol to implement some of these requirements or to implement additional functionality that conforming types can take advantage of.
+                        <br>
+                        <br>
+                        Protocol Syntax
+                        You define protocols in a very similar way to classes, structures, and enumerations:
+                        
+                        protocol SomeProtocol {
+                            // protocol definition goes here
+                        }
+                        Custom types state that they adopt a particular protocol by placing the protocol’s name after the type’s name, separated by a colon, as part of their definition. Multiple protocols can be listed, and are separated by commas:
+                        
+                        struct SomeStructure: FirstProtocol, AnotherProtocol {
+                            // structure definition goes here
+                        }
+                        If a class has a superclass, list the superclass name before any protocols it adopts, followed by a comma:
+                        <br>
+                        
+                        class SomeClass: SomeSuperclass, FirstProtocol, AnotherProtocol {
+                            // class definition goes here
+                        }
+                        Property Requirements
+                        A protocol can require any conforming type to provide an instance property or type property with a particular name and type. The protocol doesn’t specify whether the property should be a stored property or a computed property—it only specifies the required property name and type. The protocol also specifies whether each property must be gettable or gettable and settable.
+                        <br>
+                        <br>
+                        If a protocol requires a property to be gettable and settable, that property requirement can’t be fulfilled by a constant stored property or a read-only computed property. If the protocol only requires a property to be gettable, the requirement can be satisfied by any kind of property, and it’s valid for the property to be also settable if this is useful for your own code.
+                        <br>
+                        <br>
+                        Property requirements are always declared as variable properties, prefixed with the var keyword. Gettable and settable properties are indicated by writing { get set } after their type declaration, and gettable properties are indicated by writing { get }.
+                        <br>
+                        <br>
+                        protocol SomeProtocol {
+                            var mustBeSettable: Int { get set }
+                            var doesNotNeedToBeSettable: Int { get }
+                        }
+                        Always prefix type property requirements with the static keyword when you define them in a protocol. This rule pertains even though type property requirements can be prefixed with the class or static keyword when implemented by a class:
+                        <br>
+                        <br>
+                        protocol AnotherProtocol {
+                            static var someTypeProperty: Int { get set }
+                        }
+                        Here’s an example of a protocol with a single instance property requirement:
+                        <br>
+                        protocol FullyNamed {
+                            var fullName: String { get }
+                        }
+                        The FullyNamed protocol requires a conforming type to provide a fully-qualified name. The protocol doesn’t specify anything else about the nature of the conforming type—it only specifies that the type must be able to provide a full name for itself. The protocol states that any FullyNamed type must have a gettable instance property called fullName, which is of type String.
+                        <br>
+                        Here’s an example of a simple structure that adopts and conforms to the FullyNamed protocol:
+                        
+                        struct Person: FullyNamed {
+                            var fullName: String
+                        }
+                        let john = Person(fullName: "John Appleseed")
+                        // john.fullName is "John Appleseed"
+                        This example defines a structure called Person, which represents a specific named person. It states that it adopts the FullyNamed protocol as part of the first line of its definition.
+                        <br>
+                        <br>
+                        Each instance of Person has a single stored property called fullName, which is of type String. This matches the single requirement of the FullyNamed protocol, and means that Person has correctly conformed to the protocol. (Swift reports an error at compile-time if a protocol requirement is not fulfilled.)
+                        <br>
+                        <br>
+                        Here’s a more complex class, which also adopts and conforms to the FullyNamed protocol:
+                        
+                        class Starship: FullyNamed {
+                            var prefix: String?
+                            var name: String
+                            init(name: String, prefix: String? = nil) {
+                                self.name = name
+                                self.prefix = prefix
+                            }
+                            var fullName: String {
+                                return (prefix != nil ? prefix! + " " : "") + name
+                            }
+                        }
+                        var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
+                        // ncc1701.fullName is "USS Enterprise"
+                        This class implements the fullName property requirement as a computed read-only property for a starship. Each Starship class instance stores a mandatory name and an optional prefix. The fullName property uses the prefix value if it exists, and prepends it to the beginning of name to create a full name for the starship.
+                        <br>
+                        <br>
+                        Method Requirements
+                        Protocols can require specific instance methods and type methods to be implemented by conforming types. These methods are written as part of the protocol’s definition in exactly the same way as for normal instance and type methods, but without curly braces or a method body. Variadic parameters are allowed, subject to the same rules as for normal methods. Default values, however, can’t be specified for method parameters within a protocol’s definition.
+                        <br>
+                        <br>
+                        As with type property requirements, you always prefix type method requirements with the static keyword when they’re defined in a protocol. This is true even though type method requirements are prefixed with the class or static keyword when implemented by a class:
+                        <br>
+                        <br>
+                        protocol SomeProtocol {
+                            static func someTypeMethod()
+                        }
+                        The following example defines a protocol with a single instance method requirement:
+                        <br>
+                        protocol RandomNumberGenerator {
+                            func random() -> Double
+                        }
+                        This protocol, RandomNumberGenerator, requires any conforming type to have an instance method called random, which returns a Double value whenever it’s called. Although it’s not specified as part of the protocol, it’s assumed that this value will be a number from 0.0 up to (but not including) 1.0.
+                        <br>
+                        <br>
+                        The RandomNumberGenerator protocol doesn’t make any assumptions about how each random number will be generated—it simply requires the generator to provide a standard way to generate a new random number.
+                        
+                        Here’s an implementation of a class that adopts and conforms to the RandomNumberGenerator protocol. This class implements a pseudorandom number generator algorithm known as a linear congruential generator:
+                        <br>
+                        <br>
+                        class LinearCongruentialGenerator: RandomNumberGenerator {
+                            var lastRandom = 42.0
+                            let m = 139968.0
+                            let a = 3877.0
+                            let c = 29573.0
+                            func random() -> Double {
+                                lastRandom = ((lastRandom * a + c).truncatingRemainder(dividingBy:m))
+                                return lastRandom / m
+                            }
+                        }
+                        let generator = LinearCongruentialGenerator()
+                        print("Here's a random number: \(generator.random())")
+                        // Prints "Here's a random number: 0.3746499199817101"
+                        print("And another one: \(generator.random())")
+                        // Prints "And another one: 0.729023776863283"
+                        
+                </p>
+            </section>
+
+
+
+        </main>
+
+    
+
+</body>
+</html>
